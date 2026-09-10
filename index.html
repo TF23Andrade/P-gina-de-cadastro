@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sócio-Torcedor | Santa Cruz F.C.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form class="form-cadastro">
+        
+      <div class="listras-topo"></div>
+
+        <span>Santa Cruz<br>Futebol Clube</span>
+
+      <h1>Sócio-Torcedor</h1>
+      <p class="subtitulo">Preencha seus dados e faça parte da Cobra Coral</p>
+
+      <div class="campo">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+      </div>
+
+      <div class="campo">
+        <div class="linha-label">
+          <label for="senha">Senha</label>
+          <a href="#" class="link-esqueceu-senha">Esqueceu a senha?</a>
+        </div>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+      </div>
+
+      <div class="campo-duplo">
+        <div class="campo">
+          <label for="nascimento">Data de Nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+
+        <div class="campo">
+          <label for="genero">Gênero</label>
+          <select id="genero" name="genero" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao-dizer">Prefiro não dizer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="campo campo-de-termos">
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Li e concordo com os <a href="#">Termos de Uso</a> e o <a href="#">Estatuto do Sócio-Torcedor</a></label>
+      </div>
+
+      <button type="submit" class="bt-cadastrar">Quero ser sócio</button>
+
+      <p class="rodape">Já é sócio? <a href="#">Entrar</a></p>
+
+    </form>
+  </div>
+
+</body>
+</html>
